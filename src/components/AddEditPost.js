@@ -46,7 +46,7 @@ const AddEditPost = () => {
         <label>Content</label>
         <textarea name="content" value={post.content} placeholder='Add Content' onChange={handleChange} required />
         </div>
-        <CreateBtn type="submit">{id ? 'Update' : 'Add'} Blog</CreateBtn>
+        <CreateBtn type="submit">{id ? 'Update' : 'Create New'} Blog</CreateBtn>
         </form>
     </BlogForm>
   );
