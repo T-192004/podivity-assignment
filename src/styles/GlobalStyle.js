@@ -131,7 +131,7 @@ export const CreateBtn = styled.button`
   font-weight: 400;
   background-color: #418CDF;
   padding: 8px;
-  width: 120px;
+  width: 150px;
   border: none;
   border-radius: 5px; 
   margin: 10px;
