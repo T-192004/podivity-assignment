@@ -114,7 +114,7 @@ export const HomeBtn = styled.button`
   font-family: 'Roboto';
   font-weight: 400;
   background-color: #418CDF;
-  padding: 8px;
+  padding: 14px;
   width: 120px;
   border: none;
   height: 30px;
