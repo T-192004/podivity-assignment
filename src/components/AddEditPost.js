@@ -32,9 +32,9 @@ const AddEditPost = () => {
   };
 
   return (
-    <>
-     <Link to="/"> <HomeBtn>Home</HomeBtn></Link>
+    <>  
     <BlogForm>
+    <Link to="/"> <HomeBtn>Home</HomeBtn></Link>
         <form onSubmit={handleSubmit}>
         <h1>Create a New Blog Post</h1>
         <div>
