@@ -2,7 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { getPostById, savePost } from '../utils/mockAPI';
-import {BlogForm, CreateBtn} from '../styles/GlobalStyle'
+import {BlogForm, CreateBtn, HomeBtn} from '../styles/GlobalStyle'
+import {Link} from 'react-router-dom';
 
 
 const AddEditPost = () => {
@@ -31,6 +32,8 @@ const AddEditPost = () => {
   };
 
   return (
+    <>
+     <Link to="/"> <HomeBtn>Home</HomeBtn></Link>
     <BlogForm>
         <form onSubmit={handleSubmit}>
         <h1>Create a New Blog Post</h1>
@@ -49,6 +52,7 @@ const AddEditPost = () => {
         <CreateBtn type="submit">{id ? 'Update' : 'Create New'} Blog</CreateBtn>
         </form>
     </BlogForm>
+  </>
   );
 };
 
