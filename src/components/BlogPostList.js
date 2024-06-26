@@ -29,10 +29,7 @@ const BlogPostList = () => {
     } else {
     return (
         <>
-        <BtnContainer>
-            <Link to="/"> <HomeBtn>Home</HomeBtn></Link>
             <Link to="/add-edit-post"> <HomeBtn>Create New Blog</HomeBtn></Link>
-        </BtnContainer>
         <BlogList>
             {blogPosts.map( post =>{ 
                 const postDate = new Date(post.date);
